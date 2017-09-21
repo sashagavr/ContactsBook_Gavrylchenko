@@ -40,9 +40,11 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::ContactsBook_Gavrylchenko.Properties.Resources.logo;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(132, 145);
+            this.pictureBox1.Size = new System.Drawing.Size(134, 135);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -68,7 +70,7 @@
             // 
             this.txtLogin.Location = new System.Drawing.Point(164, 28);
             this.txtLogin.Name = "txtLogin";
-            this.txtLogin.Size = new System.Drawing.Size(259, 20);
+            this.txtLogin.Size = new System.Drawing.Size(270, 20);
             this.txtLogin.TabIndex = 3;
             // 
             // txtPassword
@@ -76,32 +78,34 @@
             this.txtPassword.Location = new System.Drawing.Point(164, 77);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '♪';
-            this.txtPassword.Size = new System.Drawing.Size(259, 20);
+            this.txtPassword.Size = new System.Drawing.Size(270, 20);
             this.txtPassword.TabIndex = 4;
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(164, 123);
+            this.btnOK.Location = new System.Drawing.Point(183, 118);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(96, 34);
+            this.btnOK.Size = new System.Drawing.Size(112, 22);
             this.btnOK.TabIndex = 5;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(327, 123);
+            this.btnCancel.Location = new System.Drawing.Point(301, 118);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(96, 34);
+            this.btnCancel.Size = new System.Drawing.Size(106, 22);
             this.btnCancel.TabIndex = 6;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // Authorization
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(435, 169);
+            this.ClientSize = new System.Drawing.Size(446, 159);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.txtPassword);
